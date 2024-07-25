@@ -1,0 +1,49 @@
+<!-- 사용자의 데이터를 가지고와서 처리 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <form action=""> <!-- action = 사용자의 데이터를 받아서 처리할 공간 -->
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <!-- label for 와 input id 같은 값 넣어줘야 연결됨 -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"> <!--type= 데이터 타입 지정 -->
+
+        <label for="message">Message</label>
+        <textarea name="" id="message"></textarea>
+        <!-- textarea 여러줄 입력칸 -->
+
+        <input type="password">
+        <input type="date">
+        <input type="color" name="c">
+        <input type="button"> <!--기능동작-->
+        <input type="checkbox"> <!--multiselect-->
+        <input type="radio"> <!--여러개의 데이터 중 한 개 선택-->
+
+        <br> <!--블럭요소 넣어주기-->
+
+        <input type="checkbox" id="bike">
+        <label for="bike">bike</label>
+        <input type="checkbox" id="car">
+        <label for="car">car</label>
+
+        <br>
+        <input type="radio" id="html" name="lang">
+        <label for="html">html</label>
+        <input type="radio" id="css" name="lang">
+        <label for="css">css</label>
+        <!-- 같은 카테고리(name)안에 있어서 택 1 가능 -->
+        <!-- name속성 사용자가 넣는 value의 key, 속성이 없으면 데이터 받을 수 없음-->
+
+
+
+        <input type="submit">
+    </form>
+</body>
+</html>
